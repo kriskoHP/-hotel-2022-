@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+    <style>
+        .header{
+            
+            background-color: rgb(243, 246, 246);
+          
+        }
+        .logo {
+            height: 80px;
+        }
+        .nav{
+            position: absolute;
+            right: 20px;
+            margin-top: -75px;
+        }
+        .nav_a{
+            text-decoration: none;
+            color: #877A71;
+            font-size: 30px;
+            padding-right: 70px;
+			
+        }
+        .nav_a_p{
+            display: inline-block;
+            padding-bottom: 10px;
+            font-style: italic;
+
+        }
+        .reservation{
+            background-color: #877A71;
+            height: 35px;
+            width: 160px;
+            color: aliceblue;
+            text-align: center;
+            
+        }
+        .nav_inp{
+            position: absolute;
+            bottom: 85px;
+            right: 10px;
+            font-size: 20px;
+            color: #877A71;
+
+        }
+        .menu{
+            background-image: url("https://cf.bstatic.com/xdata/images/hotel/max1280x900/346373262.jpg?k=58843506913d6aaa7b9f1b39de229ef047ccf723af174324a9dd3fb35b0a34af&o=&hp=1") ;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center center;
+            height: 800px;
+        }
+		
+        .button_fa {
+            position: absolute;
+            right: 50%;
+			margin-top: 40px;
+            text-transform: uppercase;
+            font-size: 20px;
+            background-color: #877A71;
+            color: white;
+            border: 0;
+        }
+		.fa_btn{
+			display: inline-block;
+			cursor: pointer;
+		}
+		.table-menu{
+            display: grid;
+            grid-template-columns: auto auto auto auto auto auto auto;
+			position: absolute;
+			margin-top: 100px;
+			border: 1px solid black;
+			border-spacing: 30px;
+			margin-left: 250px;
+            margin-right: 250px;
+            background-color: rgb(50,50,63,0.7);
+            color: aliceblue;
+            display: none;
+         
+		}
+        .table-menu-ul{
+            display: inline-grid;
+
+        }
+        .table-mobil{
+            display: none;
+        }
+     
+        .table-menu-a{
+            text-decoration: none;
+            color: aliceblue;
+        }
+
+        .table-menu-title{
+            text-decoration: none;
+            color: wheat;
+        }
+
+        .subscription{
+            position: absolute;
+            height: 100px;
+            width: -webkit-fill-available;
+            background-color: #877A71;
+            margin-top: 800px;
+            margin-right: 7px;
+            text-align: center;
+        }
+    
+		.footer {
+           
+            background-image: url("https://vcdn.bergfex.at/images/resized/72/6d492538ebead572_65477f088edd20ec@2x.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center center;
+            height: 400px;
+          
+            margin-top: 100px;
+            margin-bottom: 50px;
+        }
+        .footer_tb{
+            height: 100%;
+            width: 100%;
+            margin-top: 1px;
+            color: aliceblue;
+            background-color: rgb(53,80,63,0.7);
+     
+        }
+        li {
+            font-size: 20px;
+        }
+       
+        .footer_tb_img{
+            margin-left: 7px;
+            height: 100px;
+            width: 200px;
+
+        }
+        .footer_r{
+            position: absolute;
+            background-color: #147FCE;
+            width: -webkit-fill-available;
+            margin-right: 7px;
+            text-align: center;
+        }
+
+            /* за мобилна версия /////////////////////////////////////////////////////////////// */  
+            @media only screen and (max-width: 600px){
+            .header{
+                
+                background-color: rgb(243, 246, 246);
+            
+            }
+            .logo {
+                height: 80px;
+            }
+            .nav{
+                position: absolute;
+                right: 20px;
+                margin-top: -75px;
+                
+            }
+            .nav_a{
+                text-decoration: none;
+                color: #877A71;
+                font-size: 20px;
+                padding-right: 10px;
+                margin-left: 20px;
+                display: none;
+            }
+            .nav_a_mobile{
+                display: inline-block;
+            }
+            .nav_a_p{
+                display: inline-block;
+                padding-bottom: 10px;
+                font-style: italic;
+
+            }
+            .reservation{
+                background-color: #877A71;
+                height: 35px;
+                width: 160px;
+                color: aliceblue;
+                text-align: center;
+                
+            }
+            .nav_inp{
+                position: absolute;
+                bottom: 70px;
+                font-size: 20px;
+                color: #877A71;
+                
+
+            }
+            .menu{
+                background-image: url("https://cf.bstatic.com/xdata/images/hotel/max1280x900/346373262.jpg?k=58843506913d6aaa7b9f1b39de229ef047ccf723af174324a9dd3fb35b0a34af&o=&hp=1") ;
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center center;
+                height: 800px;
+            }
+            
+            .button_fa {
+                position: absolute;
+                margin-right: -30px;
+                margin-top: 40px;
+                text-transform: uppercase;
+                font-size: 20px;
+                background-color: #877A71;
+                color: white;
+                border: 0;
+            }
+            .fa_btn{
+                display: inline-block;
+                cursor: pointer;
+            }
+            .table-menu{
+                
+                
+                position: absolute;
+                margin-top: 80px;
+                border: 1px solid black;
+                border-spacing: 15px;
+                table-layout: fixed;
+                z-index: 1;
+                margin-left: 0;
+                margin-right: 8px;
+                font-size: 10px;
+                background-color: rgb(50,50,63,0.7);
+                color: aliceblue;
+                display: none;
+            
+            }
+            
+            .table-menu-a{
+                text-decoration: none;
+                color: aliceblue;
+            }
+
+            .subscription{
+                position: absolute;
+                height: 100px;
+                width: -webkit-fill-available;
+                background-color: #877A71;
+                margin-top: 800px;
+                margin-right: 7px;
+                text-align: center;
+            }
+        
+            .footer {
+            
+                background-image: url("https://vcdn.bergfex.at/images/resized/72/6d492538ebead572_65477f088edd20ec@2x.jpg");
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center center;
+                height: 400px;
+            
+                margin-top: 100px;
+                margin-bottom: 50px;
+            }
+            .footer_tb{
+                height: 100%;
+                width: 100%;
+                margin-top: 1px;
+                color: aliceblue;
+                background-color: rgb(53,80,63,0.7);
+            
+
+
+            }
+            .footer_tb_img{
+                margin-left: 7px;
+                height: 100px;
+                width: 200px;
+
+            }
+            .footer_r{
+                position: absolute;
+                background-color: #147FCE;
+                width: -webkit-fill-available;
+                margin-right: 7px;
+                text-align: center;
+            }
+                
+        };
+
+    </style>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Hubertus</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('.button_fa').click(function(){
+                $('.table-menu').toggle();
+            });
+        });
+
+    </script>
+
+</head>
+<body>
+    <header>
+        <div class="header">
+            <img class="logo" src="https://static.suedtirol.com/alpin-panorama-hotel-hubertus-lo-b-noc-9020c.jpg" alt="Logo">
+
+            <div class="nav">
+                <a class="nav_a" href=""><p class="nav_a_p">галерия</p></a>
+                <a class="nav_a" href=""><p class="nav_a_p">оферти</p></a>
+                <a class="nav_a" href=""><p class="nav_a_p">контакти</p></a>
+                <a class="nav_a nav_a_mobile" href=""><p class="nav_a_p reservation">резервирай</p></a>
+                <div class="nav_inp">
+                     <input  type="button" name="en" value="EN">
+                    <input  type="button" name="bg" value="BG">
+                </div>
+            </div>  
+        </div>
+    </header>
+
+  
+
+    <section class="menu">
+        <button class="button_fa " >меню</button>
+  
+		<div class="table-menu" >
+<!------------------------------------------------------------------------------------------->
+			<ul class="table-menu-ul">
+				<li><a class="table-menu-title" href="">За нас</a></li>
+                <li><a class="table-menu-a" href="">Специални оферти</a></li>
+                <li><a class="table-menu-a" href="">Обща информация и услуги</a></li>
+                <li><a class="table-menu-a" href="">Новини и събития</a></li>
+                <li><a class="table-menu-a" href="">етичен кодекс</a></li>
+
+			</ul>
+
+			<ul class="table-menu-ul">
+				<li><a class="table-menu-title" href="">Настанявания</a></li>
+                <li><a class="table-menu-a" href="">Стаи и апартаменти</a> </li>
+                <li><a class="table-menu-a" href="">Двойна стая стандарт</a></li>
+                <li><a class="table-menu-a" href="">двойна стая делукс</a></li>
+                <li><a class="table-menu-a" href="">апартаменти супериор</a></li>
+			</ul>
+
+            <ul class="table-menu-ul">
+                <li><a class="table-menu-title" href="">Ресторант</a></li>
+                <li><a class="table-menu-a" href="">Какво предлагаме</a></li>
+                <li><a class="table-menu-a" href="">закуска</a></li>
+                <li><a class="table-menu-a" href="">лоби бар</a></li>
+                <li><a class="table-menu-a" href="">сватби</a></li>
+             </ul>
+
+            <ul class="table-menu-ul">
+                <li><a class="table-menu-title" href="">СПА и басейн</a></li>
+                <li><a class="table-menu-a" href="">Уелнес център</a></li>
+                <li><a class="table-menu-a" href="">фитнес център</a></li>
+                <li><a class="table-menu-a" href="">външен басейн</a></li>            
+            </ul>
+
+            <ul class="table-menu-ul">
+                <li><a class="table-menu-title" href="">Интерестно в региона</a></li>
+                <li><a class="table-menu-a" href="">забележителности</a></li>
+                <li><a class="table-menu-a" href="">разходки с колело</a></li>
+                <li><a class="table-menu-a" href="">разходки с атв</a></li>  
+                <li><a class="table-menu-a" href="">подаръчни ваучери</a></li>
+                <li><a class="table-menu-a" href="">офроуд разходки</a></li>
+            </ul>
+
+            <ul class="table-menu-ul">
+                <li><a class="table-menu-title" href="">Срещи и мероприятия</a></li>
+                <li><a class="table-menu-a" href="">Конферентен център</a></li>
+                <li><a class="table-menu-a" href="">вип зали</a></li>
+
+            </ul>
+
+            <ul class="table-menu-ul">
+                <li><a class="table-menu-title" href="">Цени</a></li>
+                <li><a class="table-menu-a" href="">Цени и рецепция</a></li>
+            </ul>
+		</div>
+<!----------------------------------------------------------------------------------------------------------------------->
+        <div class="subscription">
+            <h1>АБОНАМЕНТ</h1>
+            <input type="text" name="name" id="name" placeholder="Име">
+            <input type="imail" name="imail" id="imail" placeholder="Въведи имейл">
+            <input type="submit" value="Запиши ме !" >
+
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer_tb" >
+            <img class="footer_tb_img" src="https://assets.kununu.com/media/prod/profiles/logos/5d84c118-a590-4e87-b62e-337a7082b604_1_60ee97b55f6ac.gif" alt="logo">
+                <ul>
+                    <li>Адрес : град Смолян  </li>
+                    <li>Рецепция: +35988225522</li>
+                    <li>bookings@hubertushotel.bg</li>
+                </ul>
+                <ul>
+                    <li>ул.Невястата №25</li>
+                    <li>Маркетинг: +35988665522</li>
+                    <li>seles@hubertushotel.bg</li>
+                </ul>
+                <ul>
+                    <li>GPS: 42,12125;24,26545</li>
+                    <li>Спа център: +359887545685</li>
+                    <li>spa@@hubertushotel.bg</li>
+                </ul>
+        </div>
+
+        <div class="footer_r">
+            <p>Hubertus Hotel. Уебдизайн от Ушака &reg </p>
+        </div>
+    </footer>
+
+</body>
+</html>
